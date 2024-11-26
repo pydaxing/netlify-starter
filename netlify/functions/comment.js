@@ -22,14 +22,6 @@ const app = Waline({
       },
     };
 
-    // 使用模板准备内容
-    const contentTemplate = `
-💬 ${data.site.name} 有新评论啦
-【评论者昵称】：${data.self.nick}
-【评论者邮箱】：${data.self.mail || '未提供'}
-【内容】：${data.self.comment}
-【地址】：${data.site.postUrl}
-`;
     const contentTemplate = `
 💬 LengM 新评论通知
 ----------------------------
