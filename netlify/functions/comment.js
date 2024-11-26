@@ -23,16 +23,19 @@ const app = Waline({
     };
 
     const contentTemplate = `
-💬 LengM 新评论通知
+💬 LengM
 ----------------------------
-站点名称: LengM
+
 评论页面: ${data.site.postUrl}
-评论内容:
-${data.self.comment}
+
+评论内容: ${data.self.comment}
 
 评论者昵称: ${data.self.nick}
+
 评论者邮箱: ${data.self.mail || '未提供'}
+
 IP 地址: ${data.self.ip || '未知'}
+
 评论时间: ${new Date(data.self.createdAt).toLocaleString()}
 
 浏览器信息: ${data.self.ua || '未知'}
